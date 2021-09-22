@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>UserControler</servlet-name>
+  	<display-name>UserControler</display-name>
+  	<description></description>
+  	<servlet-class>hibernate.project.controlers.UserControler</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CustomerControler</servlet-name>
+  	<display-name>CustomerControler</display-name>
+  	<description></description>
+  	<servlet-class>hibernate.project.controlers.CustomerControler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UserControler</servlet-name>
+  	<url-pattern>/User</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CustomerControler</servlet-name>
+  	<url-pattern>/Customer</url-pattern>
+  </servlet-mapping>
+</web-app>
